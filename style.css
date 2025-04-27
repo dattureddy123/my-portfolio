@@ -399,3 +399,133 @@ p{
         font-size: 18px;
     }
 }
+
+
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        background: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        display: none;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    nav ul li {
+        margin: 20px 0;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .skills-grid, .tools-grid, .projects-grid, .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .edImage img {
+        width: 100%;
+        height: auto;
+    }
+
+    .p-image {
+        height: 200px;
+    }
+
+    .buttons {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .tech {
+        width: 100%;
+        height: auto;
+    }
+
+    .tech img {
+        width: 120px;
+        height: 120px;
+    }
+    
+}
+@media (max-width: 768px) {
+    footer {
+        padding: 20px;
+        background-color: #252729;
+        text-align: center;
+    }
+
+    #contact {
+        padding: 20px 0;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-item {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .contact-item a {
+        color: #00ff88;
+        font-size: 16px;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .contact-item a:hover {
+        color: #fff;
+    }
+
+    .contact-item h3 {
+        color: #fff;
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        font-size: 14px;
+        color: #fff;
+        float: left;
+    }
+}
